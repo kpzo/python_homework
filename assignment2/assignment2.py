@@ -32,11 +32,8 @@ def read_employees():
         print(f"Stack trace: {stack_trace}")
         sys.exit(1)
 
-# Required global variable
+# global variable
 employees = read_employees()
-
-# Optional: print for visual check
-print(employees)
 
 
 
@@ -46,11 +43,9 @@ print(employees)
 def column_index(column_name):
     return employees["fields"].index(column_name)
 
-# Global variable used in tests
+# Global variable
 employee_id_column = column_index("employee_id")
 
-# Optional print to check things manually
-print(f"Index of employee_id column: {employee_id_column}")
 
 
 
@@ -146,10 +141,6 @@ def read_minutes():
     return minutes1, minutes2
 
 minutes1, minutes2 = read_minutes()
-
-# Optional: print for visual confirmation
-print("Minutes 1:", minutes1)
-print("Minutes 2:", minutes2)
 
 
 
